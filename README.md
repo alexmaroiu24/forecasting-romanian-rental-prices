@@ -21,34 +21,32 @@ This study addresses five key questions:
 
 # Dataset
 
-# Period
+Period
 May 2007 – February 2026
 
-# Frequency
+Frequency
 Monthly observations
 
-# Data Sources
+Data Sources
 Eurostat
 National Bank of Romania (BNR)
 European Central Bank (ECB)
 
 # Variables
-# Univariate Analysis
+Univariate Analysis
 HICP Rental Index (Actual Rentals for Housing)
 
-# Multivariate Analysis
-HICP Rental Index (Actual Rentals for Housing)
-Real Wage Index
-Mortgage Interest Rate (APRC)
-EUR/RON Exchange Rate
+Multivariate Analysis
+- HICP Rental Index (Actual Rentals for Housing)
+- Real Wage Index
+- Mortgage Interest Rate (APRC)
+- EUR/RON Exchange Rate
 
 # Methodology
-
-# Univariate Time Series Analysis
+Univariate Time Series Analysis
 The Box-Jenkins framework was applied to identify the most accurate forecasting model.
 
-# Main steps:
-
+Main steps:
 Exploratory Data Analysis
 Stationarity Testing
 Training/Test Split
@@ -56,8 +54,7 @@ SARIMA Model Selection
 Exponential Smoothing Models
 Forecast Evaluation
 
-# Models evaluated:
-
+Models evaluated
 SARIMA with Drift
 Holt Linear Trend
 Holt-Winters Additive
@@ -76,7 +73,7 @@ Heteroscedasticity in residuals
 
 The long-run dynamics between rents and macroeconomic variables were analyzed through a Vector Error Correction Model (VECM).
 
-# Methods applied:
+Methods applied:
 
 Phillips-Perron Unit Root Tests
 Zivot-Andrews Structural Break Tests
@@ -87,7 +84,7 @@ Impulse Response Functions (IRF)
 Forecast Error Variance Decomposition (FEVD)
 
 # Main Findings
-# Forecasting Performance
+Forecasting Performance
 
 Four forecasting approaches were evaluated on an independent test set covering the inflationary period between January 2023 and February 2026.
 
@@ -99,7 +96,7 @@ MAPE = 2.26%
 
 The model successfully captured the nonlinear growth pattern observed during the recent inflationary cycle and outperformed alternative exponential smoothing specifications. Statistical comparison using the Diebold-Mariano test confirmed a significant improvement over simpler trend-based models, while demonstrating predictive performance comparable to the selected SARIMA benchmark.
 
-# Rental Market Volatility
+Rental Market Volatility
 
 Volatility diagnostics revealed significant ARCH effects and volatility clustering in rental price dynamics.
 
@@ -111,18 +108,13 @@ The estimated GARCH model showed that shocks affecting the rental market tend to
 
 These findings suggest that rental markets exhibit not only long-term price trends but also changing levels of uncertainty that must be considered when constructing forecasts.
 
-# Long-Run Equilibrium Relationships
+Long-Run Equilibrium Relationships
 
-Johansen cointegration testing identified a statistically significant long-run equilibrium relationship between:
-
-Rental Prices (HICP Rent)
-Real Wages
-Mortgage Interest Rates (APRC)
-EUR/RON Exchange Rate
+Johansen cointegration testing identified a statistically significant long-run equilibrium relationship between:Rental Prices (HICP Rent), Real Wages, Mortgage Interest Rates (APRC), EUR/RON Exchange Rate
 
 The results indicate that rental prices do not evolve independently but are closely linked to broader macroeconomic conditions.
 
-# Granger Causality and Economic Drivers
+Granger Causality and Economic Drivers
 
 The analysis provides evidence that the EUR/RON exchange rate contains valuable predictive information for future rental price movements.
 
@@ -130,13 +122,13 @@ This result supports the hypothesis that depreciation of the national currency i
 
 Real wages were identified as a key structural determinant of rental affordability, while mortgage financing costs influence the allocation of housing demand between ownership and renting.
 
-# Adjustment to Economic Shocks
+Adjustment to Economic Shocks
 
 Impulse Response Functions (IRF) and VECM estimation revealed that the Romanian rental market adjusts gradually following macroeconomic shocks.
 
 The estimated error-correction mechanism confirms that deviations from the long-run equilibrium are corrected slowly, reflecting the rigid nature of housing markets, long contractual arrangements, and delayed price adjustments.
 
-# Forecast Outlook (2026–2028)
+Forecast Outlook (2026–2028)
 
 The final forecasting model projects a continued upward trajectory of rental prices over the next two years.
 
