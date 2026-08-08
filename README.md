@@ -1,113 +1,86 @@
 # Forecasting Romanian Rental Prices
 
-Forecasting rental prices in major Romanian cities using statistical time-series models and exploratory market analysis.
-
-
----
-
-## Business Question
-
-**How can rental market data be used to estimate short-term price movements and support investment, budgeting, and housing market decisions?**
-
-This project analyzes rental price dynamics across major Romanian cities and compares forecasting approaches to identify the most reliable model for short-term predictions.
+The Romanian rental market changed visibly after 2022. This project analyzes the structural shift in rental prices and estimates their likely evolution over the next two years using statistical forecasting models.
 
 ---
 
-## Key Results
+## A market that changed after 2022
 
-* **12 Romanian cities analyzed**
-* **Best forecasting model selected using MAE, RMSE, and MAPE**
-* **Consistent upward rental trend identified in major urban markets**
-* **Bucharest recorded the highest absolute rental levels**
-* **City-specific dynamics had a stronger effect than a national average**
+For more than a decade, rental prices increased gradually. After the inflation shock of 2022, the pace of growth accelerated substantially.
 
----
+![Rental price dynamics](images/price_trend.png)
 
-## Project Workflow
+### What the chart reveals
 
-1. Data collection and validation
-2. Data cleaning and preprocessing
-3. Exploratory market analysis
-4. Time-series modeling
-5. Forecast generation
-6. Model evaluation
-7. Business interpretation
+* post-2008 stabilization,
+* a temporary slowdown during the COVID-19 period,
+* a sharp acceleration after February 2022,
+* a new growth regime that differs from the previous decade.
 
 ---
 
-## Exploratory Analysis
+## Forecasting the next 24 months
 
-### Rental Price Trend
+### Multivariate forecast (VECM)
 
-![Rental Price Trend](images/price_trend.png)
+![VECM forecast](images/forecast_multivariate.png)
 
-The exploratory analysis revealed persistent price growth in large urban centers and substantial differences between local rental markets.
-
----
-
-## Forecasting Results
-
-### Forecasted Rental Prices
-
-![Forecast Results](images/forecast_results.png)
-
-Forecasts suggest continued short-term growth rather than market contraction during the analyzed period.
+The VECM specification indicates that rental prices are likely to continue increasing over the forecast horizon, while preserving the long-run relationship between the analyzed variables.
 
 ---
 
-## Main Insights
+### Final forecast (Holt–Winters multiplicative)
 
-* Rental prices were highest in Bucharest and other major university centers.
-* Smaller cities showed lower volatility and more stable forecasts.
-* Forecasted prices indicated continued market growth in the short term.
-* Local market conditions explained price differences better than a single national trend.
+![Holt-Winters forecast](images/forecast_univariate.png)
 
----
-
-## Interactive Preview
-
-![Forecast Demo](images/forecast_demo.gif)
+The final model projects continued growth through 2028, with widening uncertainty bands as the forecast horizon extends.
 
 ---
 
-## My Role
+## Key findings
 
-I independently:
-
-* collected and validated the dataset;
-* cleaned and transformed the data;
-* performed exploratory and statistical analysis;
-* built and compared forecasting models;
-* evaluated forecast accuracy;
-* prepared visualizations and business interpretations.
+* The strongest rental price acceleration occurs **after 2022**.
+* The recent trajectory is inconsistent with a return to the pre-2022 trend.
+* Short-term forecasts point to **continued upward pressure on rents**.
+* Recent increases appear to reflect a persistent market shift rather than a temporary fluctuation.
 
 ---
 
-## Repository Structure
+## Why this matters
 
-data/            Raw and processed datasets
-scripts/         R scripts for cleaning, analysis, and forecasting
-images/          Charts, screenshots, and GIF preview
-report/          Project report
-README.md        Project overview and results
+The results are relevant for:
 
----
-
-## Reproducibility
-
-1. Open the R project.
-2. Run the scripts in the `scripts/` folder in numerical order.
-3. The cleaned data, forecasts, and visualizations will be generated automatically.
+* **real estate investors** evaluating rental income expectations,
+* **financial institutions** assessing housing-market exposure,
+* **public authorities** monitoring housing affordability,
+* **households and businesses** planning future housing costs.
 
 ---
 
-## Tools & Technologies
+## Analytical approach
 
-**R · Excel · Time-Series Forecasting · Holt–Winters · Exponential Smoothing · Moving Average · Statistical Analysis · Data Visualization · Econometrics**
+* Exploratory time-series analysis
+* Interpretation of major economic events
+* **VECM** multivariate forecasting
+* **Holt–Winters multiplicative** forecasting
+* Forecast comparison and model evaluation in **R**
 
 ---
 
-## What I Learned
+## Tools
 
-The project strengthened my ability to work with real market data, evaluate competing forecasting models, investigate unexpected results, and translate statistical findings into practical business insights.
+**R · Time-Series Analysis · VECM · Holt–Winters · Forecasting · Statistical Modeling · Data Visualization**
 
+---
+
+## Repository structure
+
+* `scripts/` – analysis and forecasting code
+* `images/` – figures used in the project
+* `report/` – full project report
+
+---
+
+## Takeaway
+
+The Romanian rental market appears to have entered a higher-growth phase after 2022. The forecasting evidence suggests that rental prices are likely to remain on an upward trajectory in the near term, with important implications for housing affordability and investment planning.
