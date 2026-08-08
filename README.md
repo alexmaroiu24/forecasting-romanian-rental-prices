@@ -56,22 +56,6 @@ Forecasts suggest continued short-term growth rather than market contraction dur
 
 ---
 
-## Model Evaluation
-
-### Forecast Accuracy Comparison
-
-![Model Comparison](images/model_comparison.png)
-
-| Model                 | MAE | RMSE | MAPE |
-| --------------------- | --: | ---: | ---: |
-| Moving Average        |     |      |      |
-| Exponential Smoothing |     |      |      |
-| Holt–Winters          |     |      |      |
-
-**Final model:** Holt–Winters (lowest forecasting error).
-
----
-
 ## Main Insights
 
 * Rental prices were highest in Bucharest and other major university centers.
