@@ -32,7 +32,7 @@ The analysis was developed in **R** using both **univariate forecasting models**
 
 The first step was to understand whether the recent increase represents a temporary fluctuation or a structural break.
 
-![Rental price dynamics](images/rental_index_trend.png)
+![Rental price dynamics](images/price_trend.png)
 
 ### What the chart shows
 
@@ -63,7 +63,7 @@ The results indicated the existence of a **long-run relationship** between renta
 
 The **Holt–Winters multiplicative model** was selected as the final operational forecasting model.
 
-![Holt-Winters forecast](images/forecast_holt_winters.png)
+![Holt-Winters forecast](images/forecast_univariate.png)
 
 ### Interpretation
 
@@ -77,7 +77,7 @@ The **Holt–Winters multiplicative model** was selected as the final operationa
 
 To verify whether the conclusion depends on the forecasting technique, a multivariate **VECM** specification was estimated.
 
-![VECM forecast](images/forecast_vecm.png)
+![VECM forecast](images/forecast_multivariate.png)
 
 The multivariate forecast confirms the same overall message: rental prices are likely to remain on an upward trajectory in the near term.
 
