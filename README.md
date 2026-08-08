@@ -2,7 +2,6 @@
 
 Forecasting rental prices in major Romanian cities using statistical time-series models and exploratory market analysis.
 
-![Project Preview](images/hero_forecast.png)
 
 ---
 
